@@ -1,18 +1,17 @@
 import styles from "./content.module.css";
 
-const Content = ({ item }) => {
+const Content = ({ item, HandleByButton }) => {
   // const { item } = props; // Destructuring
-  const seeButtonClick = (event) => {
-    console.log(event);
-    console.log(`its ${item} `);
-  };
+  // const seeButtonClick = (event) => {
+  //   console.log(event);
+  //   console.log(`its ${item} `);
 
   return (
     <li className={` ${styles.mine_items}  list-group-item `}>
       <span>{item}</span>{" "}
       <button
         className={`${styles.buttons} btn btn-info`}
-        onClick={(event) => seeButtonClick(event)}
+        onClick={HandleByButton}
       >
         See
       </button>
