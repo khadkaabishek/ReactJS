@@ -1,19 +1,21 @@
 import styles from "./content.module.css";
+import { GiLookAt } from "react-icons/gi";
 
-const Content = ({ item,see, HandleByButton }) => {
+
+const Content = ({ item, see, HandleByButton }) => {
   // const { item } = props; // Destructuring
   // const seeButtonClick = (event) => {
   //   console.log(event);
   //   console.log(`its ${item} `);
 
   return (
-    <li className={` ${styles.mine_items}  list-group-item ${ see && "active"}`}>
+    <li className={` ${styles.mine_items}  list-group-item ${see && "active"}`}>
       <span>{item}</span>{" "}
       <button
         className={`${styles.buttons} btn btn-info`}
         onClick={HandleByButton}
       >
-        See
+        <GiLookAt />
       </button>
     </li>
   );
