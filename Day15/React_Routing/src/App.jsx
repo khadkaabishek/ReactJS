@@ -1,4 +1,3 @@
-import "./App.css";
 import Navbar from "./assets/components/Navbar";
 import Home from "./assets/components/Home";
 import Login from "./assets/components/Login";
@@ -51,5 +50,4 @@ function App() {
     </>
   );
 }
-
 export default App;
