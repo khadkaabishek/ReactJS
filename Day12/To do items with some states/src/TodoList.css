@@ -1,0 +1,21 @@
+.todo-list {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: black; 
+  }
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+  
